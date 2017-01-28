@@ -1,0 +1,24 @@
+{
+  "name": "generals.io-replay-simulator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo 'No tests implemented.'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vzhou842/generals.io-Replay-Simulator.git"
+  },
+  "keywords": [
+    "generals.io",
+    "simulator",
+    "replay"
+  ],
+  "author": "Victor Zhou",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vzhou842/generals.io-Replay-Simulator/issues"
+  },
+  "homepage": "https://github.com/vzhou842/generals.io-Replay-Simulator#readme"
+}
