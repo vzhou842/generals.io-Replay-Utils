@@ -1,24 +1,30 @@
 {
-  "name": "generals.io-replay-simulator",
+  "name": "generals.io-replay-utils",
   "version": "1.0.0",
   "description": "",
-  "main": "main.js",
+  "main": "simulator.js",
   "scripts": {
     "test": "echo 'No tests implemented.'"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vzhou842/generals.io-Replay-Simulator.git"
+    "url": "git+https://github.com/vzhou842/generals.io-Replay-Utils.git"
   },
   "keywords": [
     "generals.io",
+    "utils",
     "simulator",
+    "converter",
     "replay"
   ],
   "author": "Victor Zhou",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/vzhou842/generals.io-Replay-Simulator/issues"
+    "url": "https://github.com/vzhou842/generals.io-Replay-Utils/issues"
   },
-  "homepage": "https://github.com/vzhou842/generals.io-Replay-Simulator#readme"
+  "homepage": "https://github.com/vzhou842/generals.io-Replay-Utils#readme",
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "lz-string": "^1.4.4"
+  }
 }
