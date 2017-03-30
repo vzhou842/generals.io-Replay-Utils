@@ -11,3 +11,7 @@ First, make sure you've read http://dev.generals.io/replays. That page will have
 ## Using the Converter
 
 `node converter.js` converts the serialized file `input.gior` to the plaintext JSON `output.gioreplay`. Since replays are stored on the server in `.gior` format, this converter can be used to translate `.gior` files to `.gioreplay` files that the Simulator can use.
+
+### Support
+
+Only Replay versions 5 and 6 are supported. The only difference between versions 5 and 6 is city regeneration - see `Game.js` for more information.

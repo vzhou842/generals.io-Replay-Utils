@@ -67,6 +67,13 @@ Game.createFromReplay = function(gameReplay) {
 		game.addGeneral(gameReplay.generals[i]);
 	}
 
+	// For replay versions < 6, city regeneration is enabled.
+	// City regeneration is when cities "heal" themselves back to 40 after
+	// dropping below 40 army.
+	if (gameReplay.version < 6) {
+		game.city_regen = true;
+	}
+
 	return game;
 };
 
@@ -94,9 +101,9 @@ Game.prototype.update = function() {
 			this.map.incrementArmyAt(this.generals[i]);
 		}
 		for (var i = 0; i < this.cities.length; i++) {
-			// Increment owned cities + unowned cities below the min threshold.
+			// Increment owned cities + unowned cities below the min threshold if city_regen is enabled.
 			if (this.map.tileAt(this.cities[i]) >= 0 ||
-				this.map.armyAt(this.cities[i]) < Constants.MIN_CITY_ARMY) {
+				(this.city_regen && this.map.armyAt(this.cities[i]) < Constants.MIN_CITY_ARMY)) {
 				this.map.incrementArmyAt(this.cities[i]);
 			}
 		}
