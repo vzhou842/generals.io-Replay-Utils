@@ -14,4 +14,4 @@ First, make sure you've read http://dev.generals.io/replays. That page will have
 
 ### Support
 
-Only Replay versions 5 and 6 are supported. The only difference between versions 5 and 6 is city regeneration - see `Game.js` for more information.
+Only Replay versions 5, 6, and 7 are supported. The only difference between versions 5 and 6 is city regeneration - see `Game.js` for more information. Version 7 adds a `map_title` field to the replay file - see `converter.js` for more information.

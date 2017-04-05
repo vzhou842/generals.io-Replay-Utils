@@ -32,6 +32,7 @@ function deserialize(serialized) {
 	replay.moves = obj[i++].map(deserializeMove);
 	replay.afks = obj[i++].map(deserializeAFK);
 	replay.teams = obj[i++];
+	replay.map_title = obj[i++]; // only available when version >= 7
 
 	return replay;
 };
