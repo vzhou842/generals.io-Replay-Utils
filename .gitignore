@@ -32,3 +32,5 @@ build/Release
 dump.rdb
 
 .gitignore~
+
+node_modules/

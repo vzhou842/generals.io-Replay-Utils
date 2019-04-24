@@ -24,7 +24,6 @@
   },
   "homepage": "https://github.com/vzhou842/generals.io-Replay-Utils#readme",
   "dependencies": {
-    "fs": "0.0.1-security",
     "lz-string": "^1.4.4"
   }
 }
